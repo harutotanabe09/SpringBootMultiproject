@@ -1,0 +1,18 @@
+jar {
+    enabled = true
+}
+
+dependencies {
+
+	// Spring
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Library
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// Test
+	testCompile group: 'com.github.springtestdbunit', name: 'spring-test-dbunit', version: '1.3.0'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile group: 'org.dbunit', name: 'dbunit', version: '2.6.0'
+}
